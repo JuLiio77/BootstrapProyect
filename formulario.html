@@ -13,8 +13,8 @@
       </head>
       
 </head>
-<body>
-  
+<body class="bg-light" cz-shortcut-listen="true" style="">
+
     <div id="menu">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -34,7 +34,7 @@
                     <a class="nav-link" href="#">Accesorios</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Formulario</a>
+                    <a class="nav-link" href="formulario.html">Formulario</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -45,39 +45,222 @@
             </div>
             </nav>
         </div>
-        <br>
+
     <div class="container">
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
-            </div> <br>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div><br>
-            <div class="form-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="telefono" class="form-control" id="telefono" name="telefono" required>
-            </div><br>
-            <div class="form-group">
-                <label for="pais">País:</label>
-                <input type="pais" class="form-control" id="pais" name="pais" required>
-            </div><br>
-            <div class="form-group">
-                <label for="provincia">Provincia:</label>
-                <input type="provincia" class="form-control" id="provincia" name="provincia" required>
-            </div><br>
-            <div class="form-group">
-                <label for="codigo">Código Postal:</label>
-                <input type="codigo" class="form-control" id="codigo" name="codigo" required>
-            </div><br>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
-            </div><br>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+      <div class="py-5 text-center">
+        <h2>Carrito</h2>
+        <p class="lead">Rellena este formulario para completar tu compra</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Dirección de Envio</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Apellidos</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Nombre de usuario</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required="">
+                
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email </label>
+              <input type="email" class="form-control" id="email" placeholder="">
+              
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Direccion</label>
+              <input type="text" class="form-control" id="address" placeholder="c/ Balmes, 195" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Piso o Planta<span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="7.º 2">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Pais</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option>España</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label for="state">Ciudad</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                    <option>Madrid</option>
+                    <option>Barcelona</option>
+                    <option>Valencia</option>
+                    <option>Sevilla</option>
+                    <option>Zaragoza</option>
+                    <option>Málaga</option>
+                    <option>Murcia</option>
+                    <option>Palma de Mallorca</option>
+                    <option>Las Palmas de Gran Canaria</option>
+                    <option>Bilbao</option>
+                    <option>Alicante</option>
+                    <option>Córdoba</option>
+                    <option>Valladolid</option>
+                    <option>Vigo</option>
+                    <option>Gijón</option>
+                    <option>Hospitalet de Llobregat</option>
+                    <option>Vitoria-Gasteiz</option>
+                    <option>La Coruña</option>
+                    <option>Granada</option>
+                    <option>Elche</option>
+                    <option>Tarragona</option>
+                    <option>Badalona</option>
+                    <option>Oviedo</option>
+                    <option>Móstoles</option>
+                    <option>Jerez de la Frontera</option>
+                    <option>Alcalá de Henares</option>
+                    <option>Pamplona</option>
+                    <option>San Sebastián</option>
+                    <option>Santander</option>
+                </select>
+            </div>
+
+            
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">La dirección de envío es la misma que mi dirección.</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Guarde esta información para la próxima vez.</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Formas de pago</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="debit">Tarjeta de Débito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="paypal">Paypal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Nombre de la Tarjeta</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Número de Tarjeta</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Caducidad de la Tarjeta</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2022-2023 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">Terminos</a></li>
+          <li class="list-inline-item"><a href="#">Ayuda</a></li>
+        </ul>
+      </footer>
     </div>
+
+    
+  
+
 </body>
 </html>
+
