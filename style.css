@@ -29,28 +29,41 @@ ol {
     color: white;
     }
       
+.card {
+    
+    margin-left: 45px;
+    }
+    
+@media (min-width: 992px) {
     .card {
-     
-        margin-left: 45px;
-      }
-      
-    @media (min-width: 992px) {
-        .card {
-          margin-right: 10px;
-          margin-left: 10px;
-        }
-      }
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    }
 
 
-    .form-group label {
-        font-weight: bold;
-    }
-    .form-control:focus {
-        border-color: #00bfff;
-        box-shadow: none;
-    }
-    .btn-primary {
-        background-color: #00bfff;
-        border: none;
-    }
+.form-group label {
+    font-weight: bold;
+}
+.form-control:focus {
+    border-color: #00bfff;
+    box-shadow: none;
+}
+.btn-primary {
+    background-color: #00bfff;
+    border: none;
+}
+
+#carrito{
+    color: red;
+    text-decoration:solid;
+}
+
+#carrito2{
+    color: black;
+}
+
+#boton-portada{
+    align-items: flex-end;
+}
 
