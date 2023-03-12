@@ -20,7 +20,7 @@ ol {
 .cuadro {
     height: 80px;
     width: 100%;
-    background-color: #9c9c9c;
+    background-color: #4e555e;
     text-align: center;
     display: flex;
     align-items: center;
@@ -63,4 +63,11 @@ ol {
     color: black;
 }
 
+iframe {
+margin-bottom: 20px;
+}
+
+.btn-block {
+margin-top: 20px;
+}
 
